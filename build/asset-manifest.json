@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "./static/css/main.59ab1ccf.chunk.css",
+    "main.js": "./static/js/main.3d4669ad.chunk.js",
+    "main.js.map": "./static/js/main.3d4669ad.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.46e79f63.js",
+    "runtime-main.js.map": "./static/js/runtime-main.46e79f63.js.map",
+    "static/js/2.80368fb3.chunk.js": "./static/js/2.80368fb3.chunk.js",
+    "static/js/2.80368fb3.chunk.js.map": "./static/js/2.80368fb3.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/main.59ab1ccf.chunk.css.map": "./static/css/main.59ab1ccf.chunk.css.map",
+    "static/js/2.80368fb3.chunk.js.LICENSE.txt": "./static/js/2.80368fb3.chunk.js.LICENSE.txt",
+    "static/media/birds1.f424e095.jpg": "./static/media/birds1.f424e095.jpg",
+    "static/media/cross3.05174520.png": "./static/media/cross3.05174520.png",
+    "static/media/cross4.125c6d05.jpg": "./static/media/cross4.125c6d05.jpg",
+    "static/media/fiveBread.a0abb2b1.jpg": "./static/media/fiveBread.a0abb2b1.jpg",
+    "static/media/prayer3.7605294d.png": "./static/media/prayer3.7605294d.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.46e79f63.js",
+    "static/js/2.80368fb3.chunk.js",
+    "static/css/main.59ab1ccf.chunk.css",
+    "static/js/main.3d4669ad.chunk.js"
+  ]
+}
