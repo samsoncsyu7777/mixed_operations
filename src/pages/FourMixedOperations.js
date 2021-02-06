@@ -174,6 +174,12 @@ export const FourMixedOperations = ({ languageIndex, topic, learningTool, topicI
   };
 
   const okClick = (e) => {
+    //check last character is an operator
+    var tmpString = formulaLinesArray[formulaFocusedIndex];
+    var lastChar = tmpString.slice(tmpString.length - 1);
+    if (["+", "-", "×", "÷"].includes(lastChar)) {
+      return;
+    }
     //replace last formula hints
     var replacedHint = errorMessage.replace(/\*/g, "×");
     replacedHint = replacedHint.replace(/\//g, "÷");
@@ -526,7 +532,11 @@ export const FourMixedOperations = ({ languageIndex, topic, learningTool, topicI
       if (key == "<-") {
         tmpFormulaLinesArray[formulaFocusedIndex] = tmpFormulaLinesArray[formulaFocusedIndex].slice(0, -1);
       } else {
-        tmpFormulaLinesArray[formulaFocusedIndex] += key;
+        var tmpString = tmpFormulaLinesArray[formulaFocusedIndex];
+        var lastChar = tmpString.slice(tmpString.length - 1);
+        if (!(["+", "-", "×", "÷", ""].includes(lastChar) && ["+", "-", "×", "÷"].includes(key))) {
+          tmpFormulaLinesArray[formulaFocusedIndex] += key;
+        }
       }
       setFormulaLinesArray(tmpFormulaLinesArray);
     }
@@ -540,7 +550,7 @@ export const FourMixedOperations = ({ languageIndex, topic, learningTool, topicI
         <Grid className={classes.formulaColumn}>
           {
             formulaLinesArray.map((formula, index) => {
-              return <Grid className={`${classes.verticalCenterRow} ${classes.commonPadding}`}>
+              return <Grid key={index} className={`${classes.verticalCenterRow} ${classes.commonPadding}`}>
                 <Typography
                   className={classes.formulaLine}
                   style={{ opacity: index == 0 ? 0 : 1 }}

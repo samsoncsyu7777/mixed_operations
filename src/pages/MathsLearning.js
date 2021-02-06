@@ -8,7 +8,7 @@ import {
 } from "../components/MathsLearningComponents";
 import {
   FourMixedOperations,
-} from "../pages/FourMixedOperations";
+} from "./FourMixedOperations";
 import { withStyles } from "@material-ui/core/styles";
 import { theme as myTheme } from "../themes/theme";
 import pic1 from "../assets/cross3.png";
@@ -199,7 +199,7 @@ function MathsLearning(props) {
   const { classes } = props;
 
   return (
-    <Grid className={classes.mathsLearningContainer} spacing={0}>
+    <Grid className={classes.mathsLearningContainer} >
       <Grid container className={classes.headingContainer}>
         <HeadingSelect
           selectLabel="Language"

@@ -55,6 +55,7 @@ export const MyKeypad = ({ handleClick, acceptDecimal }) => {
           keypadTexts.map((key, index) => {
             if (index < 8) {
               return <Button
+                key={index}
                 className={classes.keypadKey}
                 value={key}
                 variant="contained"                
@@ -73,6 +74,7 @@ export const MyKeypad = ({ handleClick, acceptDecimal }) => {
           keypadTexts.map((key, index) => {
             if (index > 7) {
               return <Button
+                key={index}
                 className={classes.keypadKey}
                 value={key}
                 variant="contained"                
